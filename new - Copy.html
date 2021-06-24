@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+        .logo {
+            display: flex;
+            width: 20%;
+
+        }
+
+        .logo img {
+            width: 40px;
+            border: 3px solid azure;
+            border-radius: 33px;
+            align-items: flex-end;
+
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            cursor: pointer;
+        }
+
+        .nav-list {
+            width: 50%;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-list li {
+            list-style: none;
+            padding: 24px 20px;
+            font-size: large;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-list li a:hover {
+            transition: 300ms;
+            color: darkorange;
+        }
+
+        .right-nav {
+
+            text-align: right;
+            width: 50%;
+        }
+
+        #search {
+            padding: 2px;
+            align-items: center;
+            font-size: 18px;
+            border: 3px solid whitesmoke;
+            border-radius: 303px;
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.7) url(ok.jpg.webp);
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+
+        .mainbox {
+            height: 40%;
+            display: flex;
+            font-size: large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white
+        }
+
+        .btn1 {
+            position: relative;
+            left: 50%;
+            top: 100%;
+            display: inline-block border: 3px solid snow;
+            border-radius: 33px;
+            padding: 8px 20px;
+
+        }
+
+        .btn1:hover {
+            transition: 600 ms;
+            background-color: darkorange
+        }
+
+        .firstsection {
+            height: 100vh;
+        }
+
+        .firsthalf {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .text-big {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: larger;
+        }
+
+        .text-small {
+            text-align: center;
+            position: relative;
+            top: 5%;
+        }
+
+        .btn {
+            position: relative;
+            right: 70px;
+            top: 20px;
+            border: 33px;
+            border-radius: 33px;
+            padding: 8px 20px;
+        }
+
+        .btn:hover {
+            transition: 600ms;
+            background-color: darkorange;
+            cursor: pointer;
+        }
+
+        #search {
+            position: relative;
+            top: 20px;
+            right: 70px;
+        }
+
+        .secright {
+            height: 100%;
+            padding: 33px;
+        }
+
+        .para {
+            padding: 0 175px;
+        }
+
+        .pic img {
+
+            display: flex;
+            position: relative;
+            left: 1111px;
+            top: -220px;
+            width: 187px;
+            height: 196px;
+            border: 3px solid azure;
+            border-radius: 33px;
+        }
+
+
+        .secleft {
+            height: 100%;
+            padding: 0 34px;
+
+        }
+
+        .secleft .pic img {
+            display: flex;
+            position: relative;
+            left: 1111px;
+            top: -220px;
+            width: 187px;
+            height: 196px;
+            border: 3px solid azure;
+            border-radius: 33px;
+
+        }
+
+        .contact {
+            background-color: rgb(232, 233, 233);
+            height: 120vh;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .form {
+
+            max-width: 20%;
+            margin: -10px auto;
+            ;
+        }
+
+        .form-input {
+            padding: 11px;
+            border-radius: 33px;
+            width: 200%;
+            margin: 12% -135px;
+            font-size: large;
+            border: 3px whitesmoke
+        }
+
+        .btn-dark {
+            align-items: center;
+            color: #000;
+            border: 3px solid tomato;
+            right: -84px;
+            border-radius: 11px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo"><img src="logo.png" alt="logo"></div>
+            <li><a href="#home">home</a></li>
+            <li><a href="#blogs">blogs</a></li>
+            <li><a href="#contact">contact</a> </li>
+            <li><a href="#services">services</a></li>
+        </ul>
+        <div class=" right-nav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">search</button>
+        </div>
+    </nav>
+    <section class=" background firstsection">
+        <div class="mainbox">
+            <div class="firsthalf">
+                <p class="text-big">Wellcome to My page</p>
+                <p class="text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore saepe expedita
+                    beatae alias sint doloribus dolore explicabo, consectetur culpa optio sapiente vel provident maxime
+                    magnam sequi! Doloribus pariatur deleniti excepturi.</p>
+                <div class=" button">
+                    <button class="btn1">subscribe</button>
+                    <button class="btn1">watch more</button>
+                </div>
+            </div>
+            <div class="secondhalf">
+
+            </div>
+        </div>
+
+    </section>
+    <section class="secright" id="blogs">
+        <div class="para">
+            <p class="sec text-big">What Is New In US </p>
+            <p class="subtag text-small">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis
+                repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+            <div class="pic"><img src="https://source.unsplash.com/1600x900/?nature,water" alt="logo"></div>
+
+            </p>
+        </div>
+
+
+    </section>
+    <hr>
+    <section class="secleft">
+        <div class="para">
+            <p class="sec text-big">What Is New In US</p>
+            <p class="subtag text-small">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis
+                repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+            <div class="pic"><img src="https://source.unsplash.com/1600x900/?mountains" alt="logo"></div>
+
+
+            </p>
+        </div>
+
+    </section>
+    <hr>
+
+    <section class="secright" id="services">
+        <div class="para">
+            <p class="sec text-big">What Is New In US</p>
+            <p class="subtag text-small">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis
+                repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat expedita quis repellendus
+                atque sed fugit odit voluptatum sit exercitationem consequatur, quidem praesentium incidunt quod unde
+                assumenda eaque ex cupiditate quia. Fuga, odio eius! Temporibus!
+            <div class="pic"><img src="https://source.unsplash.com/1600x900/?nature" alt="logo"></div>
+
+
+            </p>
+        </div>
+
+    </section>
+    <hr>
+    <section class="contact" id="contact">
+        <h2 class="text-center">Contact Us</h2>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder=" Write Your Name">
+            <input class="form-input" type="phone" name="phone" id="phone" placeholder="Enter Your Phone Number">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your Email">
+            <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Write Your Blog"></textarea>
+            <button class="btn btn-dark">Submit</button>
+        </div>
+    </section>
+</body>
+
+</html>
